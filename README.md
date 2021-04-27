@@ -13,7 +13,7 @@ npm install --save @stylix/core @stylix/tinyprops
 
 Add `tinyProps` to the `<StylixProvider>` element's `plugins` prop array:
 
-```tsx-render
+```tsx
 import $, { StylixProvider } from '@stylix/core';
 import tinyProps from '@stylix/tinyprops';
 
@@ -21,7 +21,7 @@ import tinyProps from '@stylix/tinyprops';
   <$.div p={10} bg="AliceBlue">
     TinyProps
   </$.div>
-</StylixProvider>
+</StylixProvider>;
 ```
 
 TinyProps provides the following prop shortcuts:
@@ -85,7 +85,7 @@ TinyProps provides the following prop shortcuts:
 
 Open an issue or submit a PR on our GitHub page:
 
-https://github.com/brombal/stylix
+https://github.com/brombal/stylix-tinyprops
 
 We ascribe to the
 [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct).
