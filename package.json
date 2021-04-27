@@ -1,7 +1,7 @@
 {
   "name": "@stylix/tinyprops",
   "version": "1.0.0",
-  "description": "A set of prop shortcuts for Stylix",
+  "description": "TinyProps - a set of style prop shortcuts for Stylix",
   "keywords": [
     "stylix",
     "plugin",
