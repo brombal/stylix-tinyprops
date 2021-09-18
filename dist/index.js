@@ -1,5 +1,7 @@
-import { customProps } from '@stylix/core';
-const tinyProps = customProps({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@stylix/core");
+var tinyProps = core_1.customProps({
     inline: { display: 'inline' },
     block: { display: 'block' },
     'inline-block': { display: 'inline-block' },
@@ -14,25 +16,25 @@ const tinyProps = customProps({
     relative: { position: 'relative' },
     flexbox: { display: 'flex' },
     inlineFlex: { display: 'inline-flex' },
-    'flex-children': (val) => ({ '&> *': { flex: val } }),
+    'flex-children': function (val) { return ({ '&> *': { flex: val } }); },
     'flex-column': { display: 'flex', 'flex-direction': 'column' },
     'flex-center': { display: 'flex', alignItems: 'center', justifyContent: 'center' },
-    bg: (val) => ({ background: val }),
-    'bg-color': (val) => ({ backgroundColor: val }),
-    m: (val) => ({ margin: val }),
-    mt: (val) => ({ marginTop: val }),
-    mr: (val) => ({ marginRight: val }),
-    mb: (val) => ({ marginBottom: val }),
-    ml: (val) => ({ marginLeft: val }),
-    mh: (val) => ({ marginLeft: val, marginRight: val }),
-    mv: (val) => ({ marginTop: val, marginBottom: val }),
-    p: (val) => ({ padding: val }),
-    pt: (val) => ({ paddingTop: val }),
-    pr: (val) => ({ paddingRight: val }),
-    pb: (val) => ({ paddingBottom: val }),
-    pl: (val) => ({ paddingLeft: val }),
-    ph: (val) => ({ paddingLeft: val, paddingRight: val }),
-    pv: (val) => ({ paddingTop: val, paddingBottom: val }),
+    bg: function (val) { return ({ background: val }); },
+    'bg-color': function (val) { return ({ backgroundColor: val }); },
+    m: 'margin',
+    mt: 'margin-top',
+    mr: 'margin-right',
+    mb: 'margin-bottom',
+    ml: 'margin-left',
+    mh: function (val) { return ({ marginLeft: val, marginRight: val }); },
+    mv: function (val) { return ({ marginTop: val, marginBottom: val }); },
+    p: 'padding',
+    pt: 'padding-top',
+    pr: 'padding-right',
+    pb: 'padding-bottom',
+    pl: 'padding-left',
+    ph: function (val) { return ({ paddingLeft: val, paddingRight: val }); },
+    pv: function (val) { return ({ paddingTop: val, paddingBottom: val }); },
     bold: { fontWeight: 'bold' },
     italic: { fontStyle: 'italic' },
     'text-center': { textAlign: 'center' },
@@ -41,5 +43,5 @@ const tinyProps = customProps({
     nowrap: { flexWrap: 'nowrap', whiteSpace: 'nowrap' },
     ellipsis: { textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' },
 });
-export default tinyProps;
+exports.default = tinyProps;
 //# sourceMappingURL=index.js.map

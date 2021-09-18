@@ -2,8 +2,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
-    "module": "es6",
-    "target": "es6",
+    "module": "commonjs",
+    "target": "es5",
     "moduleResolution": "node",
     "declaration": true,
     "outDir": "dist",
