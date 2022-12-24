@@ -1,6 +1,6 @@
 {
   "name": "@stylix/tinyprops",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TinyProps - a set of style prop shortcuts for Stylix",
   "keywords": [
     "stylix",
@@ -13,6 +13,12 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./exports.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "npm run clean && tsc",
     "start": "tsc --watch",
@@ -25,19 +31,19 @@
   "author": "Alex Brombal",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.1.1",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "@types/react": "^18.0.26",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "@stylix/core": "^3.0.5",
@@ -53,9 +59,10 @@
     ]
   },
   "files": [
-    "dist/*"
+    "dist/*",
+    "exports.mjs"
   ],
   "dependencies": {
-    "csstype": "^3.0.8"
+    "csstype": "^3.1.1"
   }
 }
