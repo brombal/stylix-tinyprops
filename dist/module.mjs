@@ -1,17 +1,7 @@
-var $8zHUo$stylixcore = require("@stylix/core");
+import {customProps as $hgUW1$customProps} from "@stylix/core";
 
-function $parcel$defineInteropFlag(a) {
-  Object.defineProperty(a, '__esModule', {value: true, configurable: true});
-}
-function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
-}
 
-$parcel$defineInteropFlag(module.exports);
-
-$parcel$export(module.exports, "default", () => $882b6d93070905b3$export$2e2bcd8739ae039);
-
-const $882b6d93070905b3$var$tinyProps = (0, $8zHUo$stylixcore.customProps)({
+const $149c1bd638913645$var$tinyProps = (0, $hgUW1$customProps)({
     inline: {
         display: "inline"
     },
@@ -117,7 +107,8 @@ const $882b6d93070905b3$var$tinyProps = (0, $8zHUo$stylixcore.customProps)({
         whiteSpace: "nowrap"
     }
 });
-var $882b6d93070905b3$export$2e2bcd8739ae039 = $882b6d93070905b3$var$tinyProps;
+var $149c1bd638913645$export$2e2bcd8739ae039 = $149c1bd638913645$var$tinyProps;
 
 
-//# sourceMappingURL=index.js.map
+export {$149c1bd638913645$export$2e2bcd8739ae039 as default};
+//# sourceMappingURL=module.mjs.map

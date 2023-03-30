@@ -1,4 +1,3 @@
-import { Property } from 'csstype';
 declare module '@stylix/core' {
     interface StylixPropsExtensions {
         /**
@@ -150,3 +149,5 @@ declare module '@stylix/core' {
 }
 declare const tinyProps: import("@stylix/core").StylixPlugin[];
 export default tinyProps;
+
+//# sourceMappingURL=types.d.ts.map
