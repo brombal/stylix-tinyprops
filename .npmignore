@@ -1,4 +1,6 @@
-src/
-.eslintignore
-.eslintrc.js
+.idea/
 .husky/
+src/
+biome.json
+jest.config.js
+rollup.config.js

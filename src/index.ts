@@ -1,5 +1,5 @@
 import { customProps } from '@stylix/core';
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 declare module '@stylix/core' {
   interface StylixPropsExtensions {
@@ -175,28 +175,28 @@ const tinyProps = customProps({
 
   flexbox: { display: 'flex' },
   inlineFlex: { display: 'inline-flex' },
-  'flex-children': (val) => ({ '&> *': { flex: val } }),
+  'flex-children': (val: any) => ({ '& > *': { flex: val } }),
   'flex-column': { display: 'flex', 'flex-direction': 'column' },
   'flex-center': { display: 'flex', alignItems: 'center', justifyContent: 'center' },
 
-  bg: (val) => ({ background: val }),
-  'bg-color': (val) => ({ backgroundColor: val }),
+  bg: (val: any) => ({ background: val }),
+  'bg-color': (val: any) => ({ backgroundColor: val }),
 
   m: 'margin',
   mt: 'margin-top',
   mr: 'margin-right',
   mb: 'margin-bottom',
   ml: 'margin-left',
-  mh: (val) => ({ marginLeft: val, marginRight: val }),
-  mv: (val) => ({ marginTop: val, marginBottom: val }),
+  mh: (val: any) => ({ marginLeft: val, marginRight: val }),
+  mv: (val: any) => ({ marginTop: val, marginBottom: val }),
 
   p: 'padding',
   pt: 'padding-top',
   pr: 'padding-right',
   pb: 'padding-bottom',
   pl: 'padding-left',
-  ph: (val) => ({ paddingLeft: val, paddingRight: val }),
-  pv: (val) => ({ paddingTop: val, paddingBottom: val }),
+  ph: (val: any) => ({ paddingLeft: val, paddingRight: val }),
+  pv: (val: any) => ({ paddingTop: val, paddingBottom: val }),
 
   bold: { fontWeight: 'bold' },
   italic: { fontStyle: 'italic' },
@@ -210,3 +210,4 @@ const tinyProps = customProps({
 });
 
 export default tinyProps;
+// export = tinyProps;

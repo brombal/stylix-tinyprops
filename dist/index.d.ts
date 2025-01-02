@@ -1,3 +1,6 @@
+import * as _stylix_core from '@stylix/core';
+import { Property } from 'csstype';
+
 declare module '@stylix/core' {
     interface StylixPropsExtensions {
         /**
@@ -147,7 +150,6 @@ declare module '@stylix/core' {
         ellipsis: boolean;
     }
 }
-declare const tinyProps: import("@stylix/core").StylixPlugin[];
-export default tinyProps;
+declare const tinyProps: _stylix_core.StylixPlugin[];
 
-//# sourceMappingURL=types.d.ts.map
+export { tinyProps as default };
