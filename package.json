@@ -2,7 +2,15 @@
   "name": "@stylix/tinyprops",
   "version": "5.0.0-rc1",
   "description": "TinyProps - a set of style prop shortcuts for Stylix",
-  "keywords": ["stylix", "plugin", "css", "react", "styles", "css-in-js", "shortcuts"],
+  "keywords": [
+    "stylix",
+    "plugin",
+    "css",
+    "react",
+    "styles",
+    "css-in-js",
+    "shortcuts"
+  ],
   "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -33,7 +41,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@stylix/core": "file:.yalc/@stylix/core",
+    "@stylix/core": "github:brombal/stylix#v5",
     "csstype": "^3.1.3"
   }
 }
