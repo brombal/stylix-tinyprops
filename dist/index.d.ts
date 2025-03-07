@@ -14,6 +14,7 @@ declare module '@stylix/core' {
         /**
          * Shorthand for display="inline-block"
          */
+        'inline-block': boolean;
         inlineBlock: boolean;
         /**
          * Shorthand for position="absolute"
@@ -23,6 +24,7 @@ declare module '@stylix/core' {
          * Shorthand for position="absolute" transform="translate(-50%, -50%)"
          */
         'abs-center': boolean;
+        absCenter: boolean;
         /**
          * Shorthand for
          * position: absolute;
@@ -32,6 +34,7 @@ declare module '@stylix/core' {
          * height: 100%;
          */
         'abs-fill': boolean;
+        absFill: boolean;
         /**
          * Shorthand for position="relative"
          */
@@ -43,19 +46,23 @@ declare module '@stylix/core' {
         /**
          * Shorthand for display="inline-flex"
          */
+        'inline-flex': boolean;
         inlineFlex: boolean;
         /**
          * Shorthand for flex="..." on all children (i.e. { "& > *": { flex: "..." } })
          */
         'flex-children': Property.Flex<string | number>;
+        flexChildren: Property.Flex<string | number>;
         /**
          * Shorthand for display="flex" flex-direction="column"
          */
         'flex-column': boolean;
+        flexColumn: boolean;
         /**
          * Shorthand for display="flex" align-items="center" justify-content="center"
          */
         'flex-center': boolean;
+        flexCenter: boolean;
         /**
          * Shorthand for background
          */
@@ -64,6 +71,7 @@ declare module '@stylix/core' {
          * Shorthand for background-color
          */
         'bg-color': Property.BackgroundColor;
+        bgColor: Property.BackgroundColor;
         /**
          * Shorthand for margin
          */
@@ -132,14 +140,16 @@ declare module '@stylix/core' {
          * Shorthand for text-align="center"
          */
         'text-center': boolean;
+        textCenter: boolean;
         /**
          * Shorthand for text-align="right"
          */
-        'text-right': boolean;
+        textRight: boolean;
         /**
          * Shorthand for text-align="left"
          */
         'text-left': boolean;
+        textLeft: boolean;
         /**
          * Shorthand for flex-wrap="nowrap" white-space="nowrap"
          */

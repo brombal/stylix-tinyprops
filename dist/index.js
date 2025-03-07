@@ -42,7 +42,6 @@ const tinyProps = customProps({
     nowrap: { flexWrap: 'nowrap', whiteSpace: 'nowrap' },
     ellipsis: { textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' },
 });
-// export = tinyProps;
 
 export { tinyProps as default };
 //# sourceMappingURL=index.js.map
