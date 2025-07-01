@@ -1,6 +1,6 @@
 {
   "name": "@stylix/tinyprops",
-  "version": "5.2.0",
+  "version": "6.1.0",
   "description": "TinyProps - a set of style prop shortcuts for Stylix",
   "keywords": [
     "stylix",
@@ -41,7 +41,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@stylix/core": "^5.2.0",
+    "@stylix/core": "^6.1.0",
     "csstype": "^3.1.3"
   }
 }
