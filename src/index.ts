@@ -207,6 +207,8 @@ const tinyProps = customProps({
   pl: 'padding-left',
   ph: (val: any) => ({ paddingLeft: val, paddingRight: val }),
   pv: (val: any) => ({ paddingTop: val, paddingBottom: val }),
+  px: (val: any) => ({ paddingLeft: val, paddingRight: val }),
+  py: (val: any) => ({ paddingTop: val, paddingBottom: val }),
 
   bold: { fontWeight: 'bold' },
   italic: { fontStyle: 'italic' },
